@@ -1,0 +1,1063 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- open -->
+<div class="ope">
+<p>No need for a Recipe.Just pick up some nutritious ingredients to create delicious meals with lots of fresh produce from your fav grocery store</p>
+<a onclick="start()">start shopping</a>
+</div>
+
+<!-- open -->
+
+<div class="container">
+
+   <div class="navbar">
+    <img src="assests/LOGO.png" width="50px" height="50px">
+    <img  onclick="view()" src="assests/cart.png" width="45px" height="45px">
+   </div>
+   <p class="count"></p>
+
+   
+
+<p class="content">Shop for your favorite ingredients here.
+    Get everything you need and more!</p>
+<div class="items">
+<p onclick="chg()" class="veg">Vegetabes</p>
+<p onclick="cng()" class="fru">Fruits</p>
+</div>
+<ul class="cart-items"></ul>
+
+<div class="veggy">
+    
+    <div class="carrot">
+        
+      <div class="image">  <img src="assests/carrot.png" width="50px"></div>
+       <div class="product"> 
+        <h3>Carrot </h3>
+        <p>95rs per kg</p>
+    </div>
+   
+        <div class="cart">
+            <button onclick="subcarrot()">-</button>
+            <input type="number" id="carrot-input">
+            <button onclick="addcarrot()">+</button>
+        </div>
+    </div>
+
+
+    <div class="carrot">
+        
+        <div class="image">  <img src="assests/brinjal.png" width="50px"></div>
+         <div class="product"> 
+          <h3>Brinjal</h3>
+          <p>130rs per kg</p>
+      </div>
+     
+      <div class="cart">
+        <button onclick="subbrinjal()">-</button>
+        <input type="text" id="brinjal-input">
+        <button onclick="addbrinjal()">+</button>
+    </div>
+      </div>
+      
+
+      <div class="carrot">
+        
+        <div class="image">  <img src="assests/tomato.png" width="50px"></div>
+         <div class="product"> 
+          <h3>Tomato </h3>
+          <p>80rs per kg</p>
+      </div>
+     
+      <div class="cart">
+        <button onclick="subtomato()">-</button>
+        <input type="text" id="tomato-input">
+        <button onclick="addtomato()">+</button>
+    </div>
+      </div>
+
+
+      <div class="carrot">
+        
+        <div class="image">  <img src="assests/onion.png" width="50px"></div>
+         <div class="product"> 
+          <h3>Onion </h3>
+          <p>60rs per kg</p>
+      </div>
+     
+      <div class="cart">
+        <button onclick="subonion()">-</button>
+        <input type="text" id="onion-input">
+        <button onclick="addonion()">+</button>
+    </div>
+      </div>
+
+
+      
+      <div class="carrot">
+        
+        <div class="image">  <img src="assests/potato.png" width="50px"></div>
+         <div class="product"> 
+          <h3>Potato </h3>
+          <p>25rs per stick</p>
+      </div>
+     
+      <div class="cart">
+        <button onclick="subpotato()">-</button>
+        <input type="text" id="potato-input">
+        <button onclick="addpotato()">+</button>
+    </div>
+      </div>
+
+
+      
+      <div class="carrot">
+        
+        <div class="image">  <img src="assests/drumstick.png" width="50px"></div>
+         <div class="product"> 
+          <h3>Drumstick </h3>
+          <p>55rs per kg</p>
+      </div>
+     
+      <div class="cart">
+        <button onclick="subdrumstick()">-</button>
+        <input type="text" id="drumstick-input">
+        <button onclick="adddrumstick()">+</button>
+    </div>
+      </div>
+
+
+      
+      <div class="carrot">
+        
+        <div class="image">  <img src="assests/capsicum.png" width="50px"></div>
+         <div class="product"> 
+          <h3>Capsicum </h3>
+          <p>70rs per kg</p>
+      </div>
+     
+      <div class="cart">
+        <button onclick="subcapsicum()">-</button>
+        <input type="text" id="capsicum-input">
+        <button onclick="addcapsicum()">+</button>
+    </div>
+      </div>
+</div>
+
+
+<!-- fruit section -->
+
+<div class="fruit">
+    
+    <div class="carrot">
+        
+      <div class="image">  <img src="assests/orange.png" width="50px"></div>
+       <div class="product"> 
+        <h3>Orage </h3>
+        <p>180rs per kg</p>
+    </div>
+   
+        <div class="cart">
+            <button onclick="suborange()">-</button>
+            <input type="text" id="orange-input">
+            <button onclick="addorange()">+</button>
+        </div>
+    </div>
+
+
+     
+    <div class="carrot">
+        
+        <div class="image">  <img src="assests/apple.png" width="50px"></div>
+         <div class="product"> 
+          <h3>Apple </h3>
+          <p>205rs per kg</p>
+      </div>
+     
+          <div class="cart">
+              <button onclick="subapple()">-</button>
+              <input type="text" id="apple-input">
+              <button onclick="addapple()">+</button>
+          </div>
+      </div>
+
+       
+    <div class="carrot">
+        
+        <div class="image">  <img src="assests/grapes.png" width="50px"></div>
+         <div class="product"> 
+          <h3>Grapes</h3>
+          <p>160rs per kg</p>
+      </div>
+     
+          <div class="cart">
+              <button onclick="subgrapes()">-</button>
+              <input type="text" id="grapes-input">
+              <button onclick="addgrapes()">+</button>
+          </div>
+      </div>
+
+       
+    <div class="carrot">
+        
+        <div class="image">  <img src="assests/mango.png" width="50px"></div>
+         <div class="product"> 
+          <h3>Mango </h3>
+          <p>130rs per kg</p>
+      </div>
+     
+          <div class="cart">
+              <button onclick="submango()">-</button>
+              <input type="text" id="mango-input">
+              <button onclick="addmango()">+</button>
+          </div>
+      </div>
+
+       
+    <div class="carrot">
+        
+        <div class="image">  <img src="assests/pineapple.png" width="50px"></div>
+         <div class="product"> 
+          <h3>Pineapple </h3>
+          <p>90rs per kg</p>
+      </div>
+     
+          <div class="cart">
+              <button onclick="subpineapple()">-</button>
+              <input type="text" id="pineapple-input">
+              <button onclick="addpineapple()">+</button>
+          </div>
+      </div>
+
+       
+    <div class="carrot">
+        
+        <div class="image">  <img src="assests/avacado.png" width="50px"></div>
+         <div class="product"> 
+          <h3>Avacado </h3>
+          <p>280rs per kg</p>
+      </div>
+     
+          <div class="cart">
+              <button onclick="subavacado()">-</button>
+              <input type="text" id="avacado-input">
+              <button onclick="addavacado()">+</button>
+          </div>
+      </div>
+
+       
+    <div class="carrot">
+        
+        <div class="image">  <img src="assests/banana.png" width="50px"></div>
+         <div class="product"> 
+          <h3>Banana </h3>
+          <p>45rs per dozen</p>
+      </div>
+     
+          <div class="cart">
+              <button onclick="subbanana()">-</button>
+              <input type="text" id="banana-input">
+              <button onclick="addbanana()">+</button>
+          </div>
+      </div>
+
+
+
+    </div>
+
+<footer>
+    <p>©Copyrights 2022</p>
+    <p>All rights reserved.Powered by the FRUITBOX</p>
+</footer>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+
+
+
+let fruit=document.getElementsByClassName("fru")[0];
+let Vegetable=document.getElementsByClassName("veg")[0];
+let vegcat=document.getElementsByClassName("veggy")[0];
+let frucat=document.getElementsByClassName("fruit")[0];
+var output=document.getElementById("output");
+
+function cng(){
+fruit.style.color="white";
+fruit.style.background="#D71200";
+Vegetable.style.color="#D71200";
+Vegetable.style.background="white";
+vegcat.style.display="none";
+frucat.style.display="block"
+
+}
+function chg(){
+    fruit.style.color="#D71200";
+fruit.style.background="white";
+Vegetable.style.color="white";
+Vegetable.style.background="#D71200";
+vegcat.style.display="block";
+frucat.style.display="none"
+}
+
+let cartitems=document.getElementsByClassName("cart-items")[0];
+
+
+function view(){
+ 
+    if(count.innerHTML>0);
+
+{
+    cartitems.classList.toggle("cartview");
+    count.classList.toggle("countview");
+   
+}
+   
+
+}
+           
+
+
+
+
+        let carrot=(document.getElementById("carrot-input"));
+        let brinjal=document.getElementById("brinjal-input");
+        let tomato=document.getElementById("tomato-input");
+        let onion=document.getElementById("onion-input");
+        let drumstick=document.getElementById("drumstick-input");
+        let potato=document.getElementById("potato-input");
+        let capsicum=document.getElementById("capsicum-input");
+        let orange=document.getElementById("orange-input");
+        let apple=document.getElementById("apple-input");
+        let grapes=document.getElementById("grapes-input");
+        let mango=document.getElementById("mango-input");
+        let pineapple=document.getElementById("pineapple-input");
+        let avacado=document.getElementById("avacado-input");
+        let banana=document.getElementById("banana-input");
+        var count=document.getElementsByClassName("count")[0];
+        let ope=document.getElementsByClassName("ope")[0];
+        let container=document.getElementsByClassName("container")[0];
+        container.style.display="none"
+        function start(){
+           ope.style.display="none";
+           container.style.display="block"
+
+                 }
+    
+
+      
+
+           
+
+
+        let total=document.createElement("li");
+cartitems.appendChild(total);
+total.style.color="#D71200";
+total.style.fontWeight="bold";
+    
+
+     
+        let carrotout=document.createElement("li");
+cartitems.appendChild(carrotout);
+
+
+
+
+
+
+    
+        function addcarrot()
+        {
+
+carrot.value=Number(carrot.value)+1;
+carrotout.innerHTML="Carrot"+" "+carrot.value+"kg"+" "+"="+("Rs"+carrot.value*95);
+if(carrot.value>0){
+    count.style.display="block";
+carrotout.style.display="block";
+count.innerHTML=Number(brinjal.value)+Number(carrot.value)+Number(tomato.value)+Number(onion.value)+Number(potato.value)+Number(drumstick.value)+Number(capsicum.value)+Number(orange.value)+Number(apple.value)+Number(grapes.value)+Number(mango.value)+Number(pineapple.value)+Number(avacado.value)+Number(banana.value);                                                                                                                            
+total.innerHTML="Your Total ordered value is Rs."+Number((brinjal.value*130)+(carrot.value*95)+(tomato.value*80)+(onion.value*60)+(potato.value*25)+(drumstick.value*55)+(capsicum.value*70)+(orange.value*180)+(apple.value*205)+(grapes.value*160)+(mango.value*130)+(pineapple.value*90)+(avacado.value*280)+(banana.value*45));
+
+}
+if(carrot.value>0){
+    place.style.display="block";
+
+
+            }
+        
+
+}
+
+
+
+
+
+      function subcarrot()
+        {
+carrot.value=Number(carrot.value)-1;
+total.innerHTML="Your Total ordered value is Rs."+Number((brinjal.value*130)+(carrot.value*95)+(tomato.value*80)+(onion.value*60)+(potato.value*25)+(drumstick.value*55)+(capsicum.value*70)+(orange.value*180)+(apple.value*205)+(grapes.value*160)+(mango.value*130)+(pineapple.value*90)+(avacado.value*280)+(banana.value*45));
+
+
+if(carrot.value<=0){
+carrotout.style.display="none";
+carrot.value="0";
+count.innerHTML=Number(brinjal.value)+Number(carrot.value)+Number(tomato.value)+Number(onion.value)+Number(potato.value)+Number(drumstick.value)+Number(capsicum.value)+Number(orange.value)+Number(apple.value)+Number(grapes.value)+Number(mango.value)+Number(pineapple.value)+Number(avacado.value)+Number(banana.value);                                                                                                                            
+}
+
+           
+
+else{
+    carrotout.innerHTML="Carrot"+" "+carrot.value+"kg"+" "+"="+("Rs"+carrot.value*95);
+
+}
+
+}
+
+// brinjal
+
+let brinjalout=document.createElement("li");
+cartitems.appendChild(brinjalout);
+brinjalout.style.display="none";
+        function addbrinjal()
+        {
+            brinjal.value=Number(brinjal.value)+1;
+brinjalout.innerHTML="Brinjal"+" "+brinjal.value+"kg"+" "+"="+("Rs"+brinjal.value*130);
+if(brinjal.value>0){
+    count.style.display="block";
+brinjalout.style.display="block";
+count.innerHTML=Number(brinjal.value)+Number(carrot.value)+Number(tomato.value)+Number(onion.value)+Number(potato.value)+Number(drumstick.value)+Number(capsicum.value)+Number(orange.value)+Number(apple.value)+Number(grapes.value)+Number(mango.value)+Number(pineapple.value)+Number(avacado.value)+Number(banana.value);                                                                                                                            
+total.innerHTML="Your Total ordered value is Rs."+Number((brinjal.value*130)+(carrot.value*95)+(tomato.value*80)+(onion.value*60)+(potato.value*25)+(drumstick.value*55)+(capsicum.value*70)+(orange.value*180)+(apple.value*205)+(grapes.value*160)+(mango.value*130)+(pineapple.value*90)+(avacado.value*280)+(banana.value*45));
+
+}
+if(brinjal.value>0){
+    place.style.display="block";
+
+
+            }
+}
+        
+        function subbrinjal()
+        {
+brinjal.value=Number(brinjal.value)-1;
+total.innerHTML="Your Total ordered value is Rs."+Number((brinjal.value*130)+(carrot.value*95)+(tomato.value*80)+(onion.value*60)+(potato.value*25)+(drumstick.value*55)+(capsicum.value*70)+(orange.value*180)+(apple.value*205)+(grapes.value*160)+(mango.value*130)+(pineapple.value*90)+(avacado.value*280)+(banana.value*45));
+
+
+if(brinjal.value<=0){
+brinjalout.style.display="none";
+brinjal.value="0";
+count.innerHTML=Number(brinjal.value)+Number(carrot.value)+Number(tomato.value)+Number(onion.value)+Number(potato.value)+Number(drumstick.value)+Number(capsicum.value)+Number(orange.value)+Number(apple.value)+Number(grapes.value)+Number(mango.value)+Number(pineapple.value)+Number(avacado.value)+Number(banana.value);                                                                                                                            
+
+}
+
+else{
+    brinjalout.innerHTML="Brinjal"+" "+brinjal.value+"kg"+" "+"="+("Rs"+brinjal.value*130);
+
+}
+
+}
+
+// brinjal
+  
+    
+// tomato
+
+let tomatoout=document.createElement("li");
+cartitems.appendChild(tomatoout);
+tomatoout.style.display="none";
+        function addtomato()
+        {
+            tomato.value=Number(tomato.value)+1;
+tomatoout.innerHTML="Tomato"+" "+tomato.value+"kg"+" "+"="+("Rs"+tomato.value*80);
+if(tomato.value>0){
+    count.style.display="block";
+tomatoout.style.display="block";
+count.innerHTML=Number(brinjal.value)+Number(carrot.value)+Number(tomato.value)+Number(onion.value)+Number(potato.value)+Number(drumstick.value)+Number(capsicum.value)+Number(orange.value)+Number(apple.value)+Number(grapes.value)+Number(mango.value)+Number(pineapple.value)+Number(avacado.value)+Number(banana.value);                                                                                                                            
+total.innerHTML="Your Total ordered value is Rs."+Number((brinjal.value*130)+(carrot.value*95)+(tomato.value*80)+(onion.value*60)+(potato.value*25)+(drumstick.value*55)+(capsicum.value*70)+(orange.value*180)+(apple.value*205)+(grapes.value*160)+(mango.value*130)+(pineapple.value*90)+(avacado.value*280)+(banana.value*45));
+
+}
+if(tomato.value>0){
+    place.style.display="block";
+
+
+            }
+
+}
+        
+        function subtomato()
+        {
+tomato.value=Number(tomato.value)-1;
+total.innerHTML="Your Total ordered value is Rs."+Number((brinjal.value*130)+(carrot.value*95)+(tomato.value*80)+(onion.value*60)+(potato.value*25)+(drumstick.value*55)+(capsicum.value*70)+(orange.value*180)+(apple.value*205)+(grapes.value*160)+(mango.value*130)+(pineapple.value*90)+(avacado.value*280)+(banana.value*45));
+
+
+if(tomato.value<=0){
+tomatoout.style.display="none";
+tomato.value="0";
+count.innerHTML=Number(brinjal.value)+Number(carrot.value)+Number(tomato.value)+Number(onion.value)+Number(potato.value)+Number(drumstick.value)+Number(capsicum.value)+Number(orange.value)+Number(apple.value)+Number(grapes.value)+Number(mango.value)+Number(pineapple.value)+Number(avacado.value)+Number(banana.value);                                                                                                                            
+
+}
+
+else{
+    tomatoout.innerHTML="Tomato"+" "+tomato.value+"kg"+" "+"="+("Rs"+tomato.value*80);
+
+}
+
+}
+
+// tomato
+
+
+// onion
+
+let onionout=document.createElement("li");
+cartitems.appendChild(onionout);
+onionout.style.display="none";
+        function addonion()
+        {
+            onion.value=Number(onion.value)+1;
+onionout.innerHTML="Onion"+" "+onion.value+"kg"+" "+"="+("Rs"+onion.value*60);
+if(onion.value>0){
+    count.style.display="block";
+onionout.style.display="block";
+count.innerHTML=Number(brinjal.value)+Number(carrot.value)+Number(tomato.value)+Number(onion.value)+Number(potato.value)+Number(drumstick.value)+Number(capsicum.value)+Number(orange.value)+Number(apple.value)+Number(grapes.value)+Number(mango.value)+Number(pineapple.value)+Number(avacado.value)+Number(banana.value);                                                                                                                            
+total.innerHTML="Your Total ordered value is Rs."+Number((brinjal.value*130)+(carrot.value*95)+(tomato.value*80)+(onion.value*60)+(potato.value*25)+(drumstick.value*55)+(capsicum.value*70)+(orange.value*180)+(apple.value*205)+(grapes.value*160)+(mango.value*130)+(pineapple.value*90)+(avacado.value*280)+(banana.value*45));
+
+}
+if(onion.value>0){
+    place.style.display="block";
+
+
+            }
+
+}
+        
+        function subonion()
+        {
+onion.value=Number(onion.value)-1;
+total.innerHTML="Your Total ordered value is Rs."+Number((brinjal.value*130)+(carrot.value*95)+(tomato.value*80)+(onion.value*60)+(potato.value*25)+(drumstick.value*55)+(capsicum.value*70)+(orange.value*180)+(apple.value*205)+(grapes.value*160)+(mango.value*130)+(pineapple.value*90)+(avacado.value*280)+(banana.value*45));
+
+
+if(onion.value<=0){
+onionout.style.display="none";
+onion.value="0";
+count.innerHTML=Number(brinjal.value)+Number(carrot.value)+Number(tomato.value)+Number(onion.value)+Number(potato.value)+Number(drumstick.value)+Number(capsicum.value)+Number(orange.value)+Number(apple.value)+Number(grapes.value)+Number(mango.value)+Number(pineapple.value)+Number(avacado.value)+Number(banana.value);                                                                                                                            
+
+}
+
+else{
+    onionout.innerHTML="Onion"+" "+onion.value+"kg"+" "+"="+("Rs"+onion.value*60);
+
+}
+
+}
+
+// onion
+
+
+
+// potato
+
+let potatoout=document.createElement("li");
+cartitems.appendChild(potatoout);
+potatoout.style.display="none";
+        function addpotato()
+        {
+            potato.value=Number(potato.value)+1;
+potatoout.innerHTML="potato"+" "+potato.value+"kg"+" "+"="+("Rs"+potato.value*25);
+if(potato.value>0){
+    count.style.display="block";
+potatoout.style.display="block";
+count.innerHTML=Number(brinjal.value)+Number(carrot.value)+Number(tomato.value)+Number(onion.value)+Number(potato.value)+Number(drumstick.value)+Number(capsicum.value)+Number(orange.value)+Number(apple.value)+Number(grapes.value)+Number(mango.value)+Number(pineapple.value)+Number(avacado.value)+Number(banana.value);                                                                                                                            
+total.innerHTML="Your Total ordered value is Rs."+Number((brinjal.value*130)+(carrot.value*95)+(tomato.value*80)+(onion.value*60)+(potato.value*25)+(drumstick.value*55)+(capsicum.value*70)+(orange.value*180)+(apple.value*205)+(grapes.value*160)+(mango.value*130)+(pineapple.value*90)+(avacado.value*280)+(banana.value*45));
+
+}
+if(potato.value>0){
+    place.style.display="block";
+
+
+            }
+
+}
+        
+        function subpotato()
+        {
+potato.value=Number(potato.value)-1;
+total.innerHTML="Your Total ordered value is Rs."+Number((brinjal.value*130)+(carrot.value*95)+(tomato.value*80)+(onion.value*60)+(potato.value*25)+(drumstick.value*55)+(capsicum.value*70)+(orange.value*180)+(apple.value*205)+(grapes.value*160)+(mango.value*130)+(pineapple.value*90)+(avacado.value*280)+(banana.value*45));
+
+
+if(potato.value<=0){
+potatoout.style.display="none";
+potato.value="0";
+count.innerHTML=Number(brinjal.value)+Number(carrot.value)+Number(tomato.value)+Number(onion.value)+Number(potato.value)+Number(drumstick.value)+Number(capsicum.value)+Number(orange.value)+Number(apple.value)+Number(grapes.value)+Number(mango.value)+Number(pineapple.value)+Number(avacado.value)+Number(banana.value);                                                                                                                            
+
+}
+
+else{
+    potatoout.innerHTML="potato"+" "+potato.value+"kg"+" "+"="+("Rs"+potato.value*25);
+
+}
+
+}
+
+// potato
+
+
+// drumstick
+
+let drumstickout=document.createElement("li");
+cartitems.appendChild(drumstickout);
+drumstickout.style.display="none";
+        function adddrumstick()
+        {
+            drumstick.value=Number(drumstick.value)+1;
+drumstickout.innerHTML="drumstick"+" "+drumstick.value+"kg"+" "+"="+("Rs"+drumstick.value*55);
+if(drumstick.value>0){
+    count.style.display="block";
+drumstickout.style.display="block";
+count.innerHTML=Number(brinjal.value)+Number(carrot.value)+Number(tomato.value)+Number(onion.value)+Number(potato.value)+Number(drumstick.value)+Number(capsicum.value)+Number(orange.value)+Number(apple.value)+Number(grapes.value)+Number(mango.value)+Number(pineapple.value)+Number(avacado.value)+Number(banana.value);                                                                                                                            
+total.innerHTML="Your Total ordered value is Rs."+Number((brinjal.value*130)+(carrot.value*95)+(tomato.value*80)+(onion.value*60)+(potato.value*25)+(drumstick.value*55)+(capsicum.value*70)+(orange.value*180)+(apple.value*205)+(grapes.value*160)+(mango.value*130)+(pineapple.value*90)+(avacado.value*280)+(banana.value*45));
+
+}
+if(drumstick.value>0){
+    place.style.display="block";
+
+
+            }
+
+}
+        
+        function subdrumstick()
+        {
+drumstick.value=Number(drumstick.value)-1;
+total.innerHTML="Your Total ordered value is Rs."+Number((brinjal.value*130)+(carrot.value*95)+(tomato.value*80)+(onion.value*60)+(potato.value*25)+(drumstick.value*55)+(capsicum.value*70)+(orange.value*180)+(apple.value*205)+(grapes.value*160)+(mango.value*130)+(pineapple.value*90)+(avacado.value*280)+(banana.value*45));
+
+
+if(drumstick.value<=0){
+drumstickout.style.display="none";
+drumstick.value="0";
+count.innerHTML=Number(brinjal.value)+Number(carrot.value)+Number(tomato.value)+Number(onion.value)+Number(potato.value)+Number(drumstick.value)+Number(capsicum.value)+Number(orange.value)+Number(apple.value)+Number(grapes.value)+Number(mango.value)+Number(pineapple.value)+Number(avacado.value)+Number(banana.value);                                                                                                                            
+
+}
+
+else{
+    drumstickout.innerHTML="drumstick"+" "+drumstick.value+"kg"+" "+"="+("Rs"+drumstick.value*55);
+
+}
+
+}
+
+// drumstick
+
+// capsicum
+
+let capsicumout=document.createElement("li");
+cartitems.appendChild(capsicumout);
+capsicumout.style.display="none";
+        function addcapsicum()
+        {
+            capsicum.value=Number(capsicum.value)+1;
+capsicumout.innerHTML="capsicum"+" "+capsicum.value+"kg"+" "+"="+("Rs"+capsicum.value*70);
+if(capsicum.value>0){
+    count.style.display="block";
+capsicumout.style.display="block";
+count.innerHTML=Number(brinjal.value)+Number(carrot.value)+Number(tomato.value)+Number(onion.value)+Number(potato.value)+Number(drumstick.value)+Number(capsicum.value)+Number(orange.value)+Number(apple.value)+Number(grapes.value)+Number(mango.value)+Number(pineapple.value)+Number(avacado.value)+Number(banana.value);                                                                                                                            
+total.innerHTML="Your Total ordered value is Rs."+Number((brinjal.value*130)+(carrot.value*95)+(tomato.value*80)+(onion.value*60)+(potato.value*25)+(drumstick.value*55)+(capsicum.value*70)+(orange.value*180)+(apple.value*205)+(grapes.value*160)+(mango.value*130)+(pineapple.value*90)+(avacado.value*280)+(banana.value*45));
+
+}
+if(capsicum.value>0){
+    place.style.display="block";
+
+
+            }
+
+}
+        
+        function subcapsicum()
+        {
+capsicum.value=Number(capsicum.value)-1;
+total.innerHTML="Your Total ordered value is Rs."+Number((brinjal.value*130)+(carrot.value*95)+(tomato.value*80)+(onion.value*60)+(potato.value*25)+(drumstick.value*55)+(capsicum.value*70)+(orange.value*180)+(apple.value*205)+(grapes.value*160)+(mango.value*130)+(pineapple.value*90)+(avacado.value*280)+(banana.value*45));
+
+
+if(capsicum.value<=0){
+capsicumout.style.display="none";
+capsicum.value="0";
+count.innerHTML=Number(brinjal.value)+Number(carrot.value)+Number(tomato.value)+Number(onion.value)+Number(potato.value)+Number(drumstick.value)+Number(capsicum.value)+Number(orange.value)+Number(apple.value)+Number(grapes.value)+Number(mango.value)+Number(pineapple.value)+Number(avacado.value)+Number(banana.value);                                                                                                                            
+
+}
+
+else{
+    capsicumout.innerHTML="capsicum"+" "+capsicum.value+"kg"+" "+"="+("Rs"+capsicum.value*70);
+
+}
+
+}
+
+// capsicum
+
+
+// orange
+
+let orangeout=document.createElement("li");
+cartitems.appendChild(orangeout);
+orangeout.style.display="none";
+        function addorange()
+        {
+            orange.value=Number(orange.value)+1;
+orangeout.innerHTML="orange"+" "+orange.value+"kg"+" "+"="+("Rs"+orange.value*180);
+if(orange.value>0){
+    count.style.display="block";
+orangeout.style.display="block";
+count.innerHTML=Number(brinjal.value)+Number(carrot.value)+Number(tomato.value)+Number(onion.value)+Number(potato.value)+Number(drumstick.value)+Number(capsicum.value)+Number(orange.value)+Number(apple.value)+Number(grapes.value)+Number(mango.value)+Number(pineapple.value)+Number(avacado.value)+Number(banana.value);                                                                                                                            
+total.innerHTML="Your Total ordered value is Rs."+Number((brinjal.value*130)+(carrot.value*95)+(tomato.value*80)+(onion.value*60)+(potato.value*25)+(drumstick.value*55)+(capsicum.value*70)+(orange.value*180)+(apple.value*205)+(grapes.value*160)+(mango.value*130)+(pineapple.value*90)+(avacado.value*280)+(banana.value*45));
+
+}
+if(orange.value>0){
+    place.style.display="block";
+
+
+            }
+
+}
+        
+        function suborange()
+        {
+orange.value=Number(orange.value)-1;
+total.innerHTML="Your Total ordered value is Rs."+Number((brinjal.value*130)+(carrot.value*95)+(tomato.value*80)+(onion.value*60)+(potato.value*25)+(drumstick.value*55)+(capsicum.value*70)+(orange.value*180)+(apple.value*205)+(grapes.value*160)+(mango.value*130)+(pineapple.value*90)+(avacado.value*280)+(banana.value*45));
+
+
+if(orange.value<=0){
+orangeout.style.display="none";
+orange.value="0";
+count.innerHTML=Number(brinjal.value)+Number(carrot.value)+Number(tomato.value)+Number(onion.value)+Number(potato.value)+Number(drumstick.value)+Number(capsicum.value)+Number(orange.value)+Number(apple.value)+Number(grapes.value)+Number(mango.value)+Number(pineapple.value)+Number(avacado.value)+Number(banana.value);                                                                                                                            
+
+}
+
+else{
+    orangeout.innerHTML="orange"+" "+orange.value+"kg"+" "+"="+("Rs"+orange.value*180);
+
+}
+
+}
+
+// orange
+
+
+// apple
+
+let appleout=document.createElement("li");
+cartitems.appendChild(appleout);
+appleout.style.display="none";
+        function addapple()
+        {
+            apple.value=Number(apple.value)+1;
+appleout.innerHTML="apple"+" "+apple.value+"kg"+" "+"="+("Rs"+apple.value*205);
+if(apple.value>0){
+    count.style.display="block";
+appleout.style.display="block";
+count.innerHTML=Number(brinjal.value)+Number(carrot.value)+Number(tomato.value)+Number(onion.value)+Number(potato.value)+Number(drumstick.value)+Number(capsicum.value)+Number(orange.value)+Number(apple.value)+Number(grapes.value)+Number(mango.value)+Number(pineapple.value)+Number(avacado.value)+Number(banana.value);                                                                                                                            
+total.innerHTML="Your Total ordered value is Rs."+Number((brinjal.value*130)+(carrot.value*95)+(tomato.value*80)+(onion.value*60)+(potato.value*25)+(drumstick.value*55)+(capsicum.value*70)+(orange.value*180)+(apple.value*205)+(grapes.value*160)+(mango.value*130)+(pineapple.value*90)+(avacado.value*280)+(banana.value*45));
+
+}
+if(apple.value>0){
+    place.style.display="block";
+
+
+            }
+
+}
+        
+        function subapple()
+        {
+apple.value=Number(apple.value)-1;
+total.innerHTML="Your Total ordered value is Rs."+Number((brinjal.value*130)+(carrot.value*95)+(tomato.value*80)+(onion.value*60)+(potato.value*25)+(drumstick.value*55)+(capsicum.value*70)+(orange.value*180)+(apple.value*205)+(grapes.value*160)+(mango.value*130)+(pineapple.value*90)+(avacado.value*280)+(banana.value*45));
+
+
+if(apple.value<=0){
+appleout.style.display="none";
+apple.value="0";
+count.innerHTML=Number(brinjal.value)+Number(carrot.value)+Number(tomato.value)+Number(onion.value)+Number(potato.value)+Number(drumstick.value)+Number(capsicum.value)+Number(orange.value)+Number(apple.value)+Number(grapes.value)+Number(mango.value)+Number(pineapple.value)+Number(avacado.value)+Number(banana.value);                                                                                                                            
+
+}
+
+else{
+    appleout.innerHTML="apple"+" "+apple.value+"kg"+" "+"="+("Rs"+apple.value*205);
+
+}
+
+}
+
+// apple
+
+
+
+// grapes
+
+let grapesout=document.createElement("li");
+cartitems.appendChild(grapesout);
+grapesout.style.display="none";
+        function addgrapes()
+        {
+            grapes.value=Number(grapes.value)+1;
+grapesout.innerHTML="grapes"+" "+grapes.value+"kg"+" "+"="+("Rs"+grapes.value*160);
+if(grapes.value>0){
+    count.style.display="block";
+grapesout.style.display="block";
+count.innerHTML=Number(brinjal.value)+Number(carrot.value)+Number(tomato.value)+Number(onion.value)+Number(potato.value)+Number(drumstick.value)+Number(capsicum.value)+Number(orange.value)+Number(apple.value)+Number(grapes.value)+Number(mango.value)+Number(pineapple.value)+Number(avacado.value)+Number(banana.value);                                                                                                                            
+total.innerHTML="Your Total ordered value is Rs."+Number((brinjal.value*130)+(carrot.value*95)+(tomato.value*80)+(onion.value*60)+(potato.value*25)+(drumstick.value*55)+(capsicum.value*70)+(orange.value*180)+(apple.value*205)+(grapes.value*160)+(mango.value*130)+(pineapple.value*90)+(avacado.value*280)+(banana.value*45));
+
+}
+if(grapes.value>0){
+    place.style.display="block";
+
+
+            }
+}
+        
+        function subgrapes()
+        {
+grapes.value=Number(grapes.value)-1;
+total.innerHTML="Your Total ordered value is Rs."+Number((brinjal.value*130)+(carrot.value*95)+(tomato.value*80)+(onion.value*60)+(potato.value*25)+(drumstick.value*55)+(capsicum.value*70)+(orange.value*180)+(apple.value*205)+(grapes.value*160)+(mango.value*130)+(pineapple.value*90)+(avacado.value*280)+(banana.value*45));
+
+
+if(grapes.value<=0){
+grapesout.style.display="none";
+grapes.value="0";
+count.innerHTML=Number(brinjal.value)+Number(carrot.value)+Number(tomato.value)+Number(onion.value)+Number(potato.value)+Number(drumstick.value)+Number(capsicum.value)+Number(orange.value)+Number(apple.value)+Number(grapes.value)+Number(mango.value)+Number(pineapple.value)+Number(avacado.value)+Number(banana.value);                                                                                                                            
+
+}
+
+else{
+    grapesout.innerHTML="grapes"+" "+grapes.value+"kg"+" "+"="+("Rs"+grapes.value*160);
+
+}
+
+}
+
+// grapes
+
+// mango
+
+let mangoout=document.createElement("li");
+cartitems.appendChild(mangoout);
+mangoout.style.display="none";
+        function addmango()
+        {
+            mango.value=Number(mango.value)+1;
+mangoout.innerHTML="mango"+" "+mango.value+"kg"+" "+"="+("Rs"+mango.value*130);
+if(mango.value>0){
+    count.style.display="block";
+mangoout.style.display="block";
+count.innerHTML=Number(brinjal.value)+Number(carrot.value)+Number(tomato.value)+Number(onion.value)+Number(potato.value)+Number(drumstick.value)+Number(capsicum.value)+Number(orange.value)+Number(apple.value)+Number(grapes.value)+Number(mango.value)+Number(pineapple.value)+Number(avacado.value)+Number(banana.value);                                                                                                                            
+total.innerHTML="Your Total ordered value is Rs."+Number((brinjal.value*130)+(carrot.value*95)+(tomato.value*80)+(onion.value*60)+(potato.value*25)+(drumstick.value*55)+(capsicum.value*70)+(orange.value*180)+(apple.value*205)+(grapes.value*160)+(mango.value*130)+(pineapple.value*90)+(avacado.value*280)+(banana.value*45));
+
+}
+if(mango.value>0){
+    place.style.display="block";
+
+
+            }
+
+}
+        
+        function submango()
+        {
+mango.value=Number(mango.value)-1;
+total.innerHTML="Your Total ordered value is Rs."+Number((brinjal.value*130)+(carrot.value*95)+(tomato.value*80)+(onion.value*60)+(potato.value*25)+(drumstick.value*55)+(capsicum.value*70)+(orange.value*180)+(apple.value*205)+(grapes.value*160)+(mango.value*130)+(pineapple.value*90)+(avacado.value*280)+(banana.value*45));
+
+
+if(mango.value<=0){
+mangoout.style.display="none";
+mango.value="0";
+count.innerHTML=Number(brinjal.value)+Number(carrot.value)+Number(tomato.value)+Number(onion.value)+Number(potato.value)+Number(drumstick.value)+Number(capsicum.value)+Number(orange.value)+Number(apple.value)+Number(grapes.value)+Number(mango.value)+Number(pineapple.value)+Number(avacado.value)+Number(banana.value);                                                                                                                            
+
+}
+
+else{
+    mangoout.innerHTML="mango"+" "+mango.value+"kg"+" "+"="+("Rs"+mango.value*130);
+
+}
+
+}
+
+// mango
+
+// pineapple
+
+let pineappleout=document.createElement("li");
+cartitems.appendChild(pineappleout);
+pineappleout.style.display="none";
+        function addpineapple()
+        {
+            pineapple.value=Number(pineapple.value)+1;
+pineappleout.innerHTML="pineapple"+" "+pineapple.value+"kg"+" "+"="+("Rs"+pineapple.value*90);
+if(pineapple.value>0){
+    count.style.display="block";
+pineappleout.style.display="block";
+count.innerHTML=Number(brinjal.value)+Number(carrot.value)+Number(tomato.value)+Number(onion.value)+Number(potato.value)+Number(drumstick.value)+Number(capsicum.value)+Number(orange.value)+Number(apple.value)+Number(grapes.value)+Number(mango.value)+Number(pineapple.value)+Number(avacado.value)+Number(banana.value);                                                                                                                            
+total.innerHTML="Your Total ordered value is Rs."+Number((brinjal.value*130)+(carrot.value*95)+(tomato.value*80)+(onion.value*60)+(potato.value*25)+(drumstick.value*55)+(capsicum.value*70)+(orange.value*180)+(apple.value*205)+(grapes.value*160)+(mango.value*130)+(pineapple.value*90)+(avacado.value*280)+(banana.value*45));
+
+}
+if(pineapple.value>0){
+    place.style.display="block";
+
+
+            }
+
+}
+        
+        function subpineapple()
+        {
+pineapple.value=Number(pineapple.value)-1;
+total.innerHTML="Your Total ordered value is Rs."+Number((brinjal.value*130)+(carrot.value*95)+(tomato.value*80)+(onion.value*60)+(potato.value*25)+(drumstick.value*55)+(capsicum.value*70)+(orange.value*180)+(apple.value*205)+(grapes.value*160)+(mango.value*130)+(pineapple.value*90)+(avacado.value*280)+(banana.value*45));
+
+
+if(pineapple.value<=0){
+pineappleout.style.display="none";
+pineapple.value="0";
+count.innerHTML=Number(brinjal.value)+Number(carrot.value)+Number(tomato.value)+Number(onion.value)+Number(potato.value)+Number(drumstick.value)+Number(capsicum.value)+Number(orange.value)+Number(apple.value)+Number(grapes.value)+Number(mango.value)+Number(pineapple.value)+Number(avacado.value)+Number(banana.value);                                                                                                                            
+
+}
+
+else{
+    pineappleout.innerHTML="pineapple"+" "+pineapple.value+"kg"+" "+"="+("Rs"+pineapple.value*90);
+
+}
+
+}
+
+// pineapple
+
+// avacado
+
+let avacadoout=document.createElement("li");
+cartitems.appendChild(avacadoout);
+avacadoout.style.display="none";
+        function addavacado()
+        {
+            avacado.value=Number(avacado.value)+1;
+avacadoout.innerHTML="avacado"+" "+avacado.value+"kg"+" "+"="+("Rs"+avacado.value*280);
+if(avacado.value>0){
+    count.style.display="block";
+avacadoout.style.display="block";
+count.innerHTML=Number(brinjal.value)+Number(carrot.value)+Number(tomato.value)+Number(onion.value)+Number(potato.value)+Number(drumstick.value)+Number(capsicum.value)+Number(orange.value)+Number(apple.value)+Number(grapes.value)+Number(mango.value)+Number(pineapple.value)+Number(avacado.value)+Number(banana.value);                                                                                                                            
+total.innerHTML="Your Total ordered value is Rs."+Number((brinjal.value*130)+(carrot.value*95)+(tomato.value*80)+(onion.value*60)+(potato.value*25)+(drumstick.value*55)+(capsicum.value*70)+(orange.value*180)+(apple.value*205)+(grapes.value*160)+(mango.value*130)+(pineapple.value*90)+(avacado.value*280)+(banana.value*45));
+
+}
+if(avacado.value>0){
+    place.style.display="block";
+
+
+            }
+
+}
+        
+        function subavacado()
+        {
+avacado.value=Number(avacado.value)-1;
+total.innerHTML="Your Total ordered value is Rs."+Number((brinjal.value*130)+(carrot.value*95)+(tomato.value*80)+(onion.value*60)+(potato.value*25)+(drumstick.value*55)+(capsicum.value*70)+(orange.value*180)+(apple.value*205)+(grapes.value*160)+(mango.value*130)+(pineapple.value*90)+(avacado.value*280)+(banana.value*45));
+
+
+if(avacado.value<=0){
+avacadoout.style.display="none";
+avacado.value="0";
+count.innerHTML=Number(brinjal.value)+Number(carrot.value)+Number(tomato.value)+Number(onion.value)+Number(potato.value)+Number(drumstick.value)+Number(capsicum.value)+Number(orange.value)+Number(apple.value)+Number(grapes.value)+Number(mango.value)+Number(pineapple.value)+Number(avacado.value)+Number(banana.value);                                                                                                                            
+
+}
+
+else{
+    avacadoout.innerHTML="avacado"+" "+avacado.value+"kg"+" "+"="+("Rs"+avacado.value*280);
+
+}
+
+}
+
+// avacado
+
+// banana
+
+let bananaout=document.createElement("li");
+cartitems.appendChild(bananaout);
+bananaout.style.display="none";
+        function addbanana()
+        {
+            banana.value=Number(banana.value)+1;
+bananaout.innerHTML="banana"+" "+banana.value+"kg"+" "+"="+("Rs"+banana.value*45);
+if(banana.value>0){
+    count.style.display="block";
+bananaout.style.display="block";
+count.innerHTML=Number(brinjal.value)+Number(carrot.value)+Number(tomato.value)+Number(onion.value)+Number(potato.value)+Number(drumstick.value)+Number(capsicum.value)+Number(orange.value)+Number(apple.value)+Number(grapes.value)+Number(mango.value)+Number(pineapple.value)+Number(avacado.value)+Number(banana.value);                                                                                                                            
+total.innerHTML="Your Total ordered value is Rs."+Number((brinjal.value*130)+(carrot.value*95)+(tomato.value*80)+(onion.value*60)+(potato.value*25)+(drumstick.value*55)+(capsicum.value*70)+(orange.value*180)+(apple.value*205)+(grapes.value*160)+(mango.value*130)+(pineapple.value*90)+(avacado.value*280)+(banana.value*45));
+
+}
+if(banana.value>0){
+    place.style.display="block";
+
+
+            }
+
+}
+        
+        function subbanana()
+        {
+banana.value=Number(banana.value)-1;
+total.innerHTML="Your Total ordered value is Rs."+Number((brinjal.value*130)+(carrot.value*95)+(tomato.value*80)+(onion.value*60)+(potato.value*25)+(drumstick.value*55)+(capsicum.value*70)+(orange.value*180)+(apple.value*205)+(grapes.value*160)+(mango.value*130)+(pineapple.value*90)+(avacado.value*280)+(banana.value*45));
+
+
+if(banana.value<=0){
+bananaout.style.display="none";
+banana.value="0";
+count.innerHTML=Number(brinjal.value)+Number(carrot.value)+Number(tomato.value)+Number(onion.value)+Number(potato.value)+Number(drumstick.value)+Number(capsicum.value)+Number(orange.value)+Number(apple.value)+Number(grapes.value)+Number(mango.value)+Number(pineapple.value)+Number(avacado.value)+Number(banana.value);                                                                                                                            
+}
+
+else{
+    bananaout.innerHTML="banana"+" "+banana.value+"kg"+" "+"="+("Rs"+banana.value*45);
+
+}
+
+}
+
+// banana
+let place=document.createElement("button");
+cartitems.appendChild(place);
+place.style.display="none";
+place.style.padding="5px 10px"
+place.style.margin="auto";
+place.style.marginTop="30px"
+place.style.backgroundColor="#D71200";
+place.style.color="white";
+place.style.border="none"
+place.style.borderRadius="10px"
+place.innerHTML="Place Order";
+place.addEventListener("click", function () {
+                  alert("Your Order Done Succesfully")
+                
+                })
+            
+
+       
+        
+        
+    </script>
+</body>
+</html>

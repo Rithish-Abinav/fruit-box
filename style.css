@@ -1,0 +1,263 @@
+@media screen and (max-width:500px) {
+   *{
+    margin: 0px;
+    padding: 0px;
+    font-family: myfont;
+   }
+   @font-face {
+    font-family: myfont;
+    src: url(assests/Poppins/Poppins-Medium.ttf);
+   }
+   body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+   
+   }
+
+.container{
+  
+    background-image: url(assests/front4.jpg);
+    padding: 0px 5%;
+    margin: auto;
+    padding-bottom: 0px;
+   
+
+
+}  
+.ope{
+    background-image: url(assests/frontbg.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    position: absolute;
+    font-size: 0.5rem;
+    text-align: center;
+    padding-top: 200px;
+    display: block;
+
+   
+    
+}
+.ope p{
+    width: 90%;
+    margin: auto;
+    animation: openani;
+    animation-duration: 0.5s;
+    margin-bottom: 50px;
+    font-size: 1rem;
+}
+
+@keyframes openani {
+    from{
+        transform: translateY(-500px);
+    }
+    to{
+        transform: translateY(0px);
+    }
+}
+.ope a{
+   padding: 5px 10px;
+   border-radius: 10px;
+   border: solid black 1px;
+   font-size: 1rem;
+   text-decoration: none;
+   background-color:orange;
+   color:black;
+   animation: openani2;
+   animation-duration: 0.5s;
+}
+@keyframes openani2 {
+    from{
+        transform: translateY(500px);
+    }
+    to{
+        transform: translateY(0px);
+    }
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    
+}
+.content{
+    font-size: 1rem;
+    text-align: center;
+    margin: 20px 0px 20px 0px;
+    color: white;
+}
+.items{
+    display: flex;
+    justify-content: space-around;
+    
+}
+.items .veg{
+    color: white;
+    background-color: #D71200;
+    padding: 5px 10px;
+    border-radius: 10px;
+    letter-spacing: 2px;
+  
+}
+.items .fru{
+    color: black;
+    background-color: white;
+    padding: 5px 10px;
+    border-radius: 10px;
+    letter-spacing: 2px;
+}
+.active{
+    color: white;
+    background-color: #D71200;
+}
+.order{
+    height: 200px;
+    width: 50vw;
+    background-color: wheat;
+    position: relative;
+    left: 45%;
+    display: none;
+}
+.veggy{
+    margin-top: 20px;
+    font-size: 1rem;
+    animation-name: ani1;
+    animation-duration: 0.8s;
+    color: white;
+
+}
+@keyframes ani1 {
+    from{
+        transform: translateX(-100px);
+    }
+    to{
+        transform: translateX(0px);
+    }
+}
+.fruit{
+    margin-top: 20px;
+    font-size: 1rem;
+    display: none;
+    animation-name: ani2;
+    animation-duration: 0.8s;
+    color: white;
+}
+@keyframes ani2 {
+    from{
+        transform: translateX(100px);
+    }
+    to{
+        transform: translateX(0px);
+    }
+}
+.veggy img{
+    background-color:white;
+    border-radius: 100%;
+    padding: 5px;
+    box-shadow: 0.1px 0.1px 1px black;
+    
+}
+.fruit img{
+    background-color:white;
+    border-radius: 100%;
+    padding: 5px;
+    box-shadow: 0.1px 0.1px 1px black;
+    
+}
+.veggy .carrot{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0px;
+}
+.fruit .carrot{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0px;
+}
+.image{
+    width: 25%;
+}
+.product{
+    width: 35%;
+}
+.veggy input{
+    width: 30px;
+    height: 30px;
+    padding-left:10px;
+}
+.fruit input{
+    width: 30px;
+    height: 30px;
+    padding-left:10px;
+}
+.cart{
+    width: fit-content;
+    margin: auto;
+}
+.cart-items{
+    background-color:wheat;
+    width:fit-content;
+    margin-left: 10%;
+    padding:15px;
+    position: absolute;
+    top: 70px;
+    right: 30px;
+    line-height: 36px;
+    display: none;
+    list-style-type: none;
+    border-radius: 10px;
+    border:solid #fc8803 1px
+}
+
+
+.cartview{
+    display: block;
+}
+.count{
+    position:absolute;
+    height: 20px;
+    width: 20px;
+    padding: 3px;
+    border-radius: 100%;
+    background-color: wheat;
+    right: 3%;
+    top: 2%;
+    text-align: center;
+    font-size: 0.8rem;
+   display: none;
+    
+}
+.countview{
+    display: none;
+}
+footer{
+    background-color: rgb(113, 112, 112);
+    color: white;
+    margin: 5% -10% 0px -10%!important;
+    padding: 10px 0px;
+}
+footer p{
+    text-align: center;
+    font-size: 0.35rem;
+   
+}
+.cart button{
+    padding:1px 6px;
+    border-radius: 100%;
+    background:wheat;
+    color:#D71200;
+}
+input{
+    background: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+}
+
+}
